@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Viajes Chile | Descubre el norte de Chile</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Raleway:wght@300;400;600&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/a5aa8887e3.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css">
+
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+  <!-- para hacer una navbar que se mantubiese a la vista con el scroll lo termine resolviendo con ia y lo integre al proyecto, pero me imagine que se podia resolver con fixed-top de boostrap-->
+  <nav class="navbar navbar-expand-lg fixed-top navbar-dark" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand" href="#inicio">
+        <img src="assets/img/viajes.svg" alt="Logo Viajes Chile" width="40" height="40" class="d-inline-block align-text-top">
+        Viajes Chile
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+              aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navMenu">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link smooth" href="#inicio">Inicio</a></li>
+          <li class="nav-item"><a class="nav-link smooth" href="#quienes-somos">Quienes Somos</a></li>
+          <li class="nav-item"><a class="nav-link smooth" href="#destacados">Destacados</a></li>
+          <li class="nav-item"><a class="nav-link smooth" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <header id="inicio">
+    <div id="heroCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#heroCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="assets/img/carousel1.jpg" class="d-block w-100" alt="Altiplano chileno con volcanes">
+          <div class="carousel-caption">
+            <h2>Altiplano Chileno</h2>
+            <p>Paisajes que parecen de otro planeta.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel2.jpg" class="d-block w-100" alt="Desierto de Atacama">
+          <div class="carousel-caption">
+            <h2>Desierto de Atacama</h2>
+            <p>El desierto más árido del mundo te espera.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="assets/img/carousel3.jpg" class="d-block w-100" alt="Vicuñas en la cordillera">
+          <div class="carousel-caption">
+            <h2>Fauna Andina</h2>
+            <p>Vicuñas, zorros y aves en su hábitat natural.</p>
+          </div>
+        </div>
+      </div>
+      <button class="carousel-control-prev" type="button" data-bs-target="#heroCarousel" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Anterior</span>
+      </button>
+      <button class="carousel-control-next" type="button" data-bs-target="#heroCarousel" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Siguiente</span>
+      </button>
+    </div>
+  </header>
+
+  <section id="quienes-somos">
+    <div class="container">
+      <h2 class="section-title">¿Quiénes somos?</h2>
+      <div class="row g-0 justify-content-center quienes-row">
+        <div class="col-md-4 quienes-col quienes-col--top">
+          <div class="info-box">
+            <div class="info-icon"><i class="fa-solid fa-plane-departure"></i></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Donec mattis ante nulla. Donec in neque consectetur,
+              ultrices justo eu, hendrerit lectus. Nullam fermentum
+              turpis et dolor euismod consequat sed sed ante.
+              Curabitur vel lacinia nisi. Sed mollis condimentum
+              rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi
+              lorem, mollis sit amet gravida in, finibus ut diam. Nunc
+              cursus lacus ex, id interdum nibh tristique ac. Maecenas
+              in mi blandit, euismod ipsum eu, lobortis nisi. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+              Mauris ultricies sem eu massa pellentesque, id interdum
+              nibh luctus. Nam ac orci id neque posuere aliquam.
+            </p>
+          </div>
+        </div>
+        <div class="col-md-4 quienes-col quienes-col--bottom">
+          <div class="info-box">
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Donec mattis ante nulla. Donec in neque consectetur,
+              ultrices justo eu, hendrerit lectus. Nullam fermentum
+              turpis et dolor euismod consequat sed sed ante.
+              Curabitur vel lacinia nisi. Sed mollis condimentum
+              rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi
+              lorem, mollis sit amet gravida in, finibus ut diam. Nunc
+              cursus lacus ex, id interdum nibh tristique ac. Maecenas
+              in mi blandit, euismod ipsum eu, lobortis nisi. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+              Mauris ultricies sem eu massa pellentesque, id interdum
+              nibh luctus. Nam ac orci id neque posuere aliquam.
+            </p>
+            <div class="info-icon"><i class="fa-solid fa-map-location-dot"></i></div>
+          </div>
+        </div>
+        <div class="col-md-4 quienes-col quienes-col--top">
+          <div class="info-box">
+            <div class="info-icon"><i class="fa-solid fa-route"></i></div>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Donec mattis ante nulla. Donec in neque consectetur,
+              ultrices justo eu, hendrerit lectus. Nullam fermentum
+              turpis et dolor euismod consequat sed sed ante.
+              Curabitur vel lacinia nisi. Sed mollis condimentum
+              rhoncus. Proin sed diam eu risus auctor aliquet. Sed nisi
+              lorem, mollis sit amet gravida in, finibus ut diam. Nunc
+              cursus lacus ex, id interdum nibh tristique ac. Maecenas
+              in mi blandit, euismod ipsum eu, lobortis nisi. Interdum
+              et malesuada fames ac ante ipsum primis in faucibus.
+              Mauris ultricies sem eu massa pellentesque, id interdum
+              nibh luctus. Nam ac orci id neque posuere aliquam.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="destacados">
+    <div class="container">
+      <h2 class="section-title">Destacados</h2>
+      <div class="row g-4">
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card destacado-card h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Torres del Paine">
+            <img src="assets/img/card1.jpg" class="card-img-top" alt="Torres del Paine">
+            <div class="card-body">
+              <h5 class="card-title">Lorem ipsum dolor sit amet</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card destacado-card h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Salar de Atacama">
+            <img src="assets/img/card2.jpg" class="card-img-top" alt="Salar de Atacama">
+            <div class="card-body">
+              <h5 class="card-title">Consectetur adipisicing elit</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card destacado-card h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Salar de Uyuni">
+            <img src="assets/img/card3.jpg" class="card-img-top" alt="Salares del norte">
+            <div class="card-body">
+              <h5 class="card-title">Sed do eiusmod tempor incididunt ut labore</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-12 col-md-6 col-lg-3">
+          <div class="card destacado-card h-100" data-bs-toggle="tooltip" data-bs-placement="top" title="Bosque nativo">
+            <img src="assets/img/card4.jpg" class="card-img-top" alt="Bosque nativo">
+            <div class="card-body">
+              <h5 class="card-title">Ut enim ad minim veniam</h5>
+              <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <section id="contacto">
+    <div class="container">
+      <h2 class="section-title">Contacto</h2>
+      <div class="row justify-content-center">
+        <div class="col-lg-8">
+          <form id="contactForm" class="contact-form" novalidate>
+            <div class="mb-3">
+              <label for="nombre" class="form-label">Nombre</label>
+              <input type="text" class="form-control" id="nombre" required>
+            </div>
+            <div class="mb-3">
+              <label for="asunto" class="form-label">Asunto</label>
+              <input type="text" class="form-control" id="asunto" required>
+            </div>
+            <div class="mb-3">
+              <label for="mensaje" class="form-label">Mensaje</label>
+              <textarea class="form-control" id="mensaje" rows="5" required></textarea>
+            </div>
+            <button type="submit" class="btn btn-enviar">Enviar</button>
+            <p id="formFeedback" class="form-feedback mt-3" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer>
+    <div class="container d-flex flex-column flex-md-row justify-content-between align-items-center gap-3">
+      <p class="footer-brand mb-0">VIAJES CHILE</p>
+      <div class="social-links">
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><i class="fa-brands fa-instagram"></i></a>
+        <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-twitter"></i></a>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook-f"></i></a>
+      </div>
+    </div>
+  </footer>
+
+  <button id="backToTop" aria-label="Volver arriba"><i class="fa-solid fa-arrow-up"></i></button>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/script.js"></script>
+</body>
+</html>
